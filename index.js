@@ -96,7 +96,8 @@ function cumleKur(
 ) {
   return birinci + ikinci + ucuncu + dorduncu + besinci;
 }
-
+//console.log(cumleKur("Hello World!"));
+//console.log(cumleKur("Hello ", "World!"));
 /* (Oto test yok) cumleKur fonksiyonuna yalnızca 1 parametre göndererek "Hello World!" stringini elde edin, 
 sonucu konsolde gözlemleyin */
 
@@ -106,7 +107,8 @@ sonucu konsolde gözlemleyin */
 /* (Oto test var) cumleKur fonksiyonuna 5 parametre göndererek "Ben iyi bir yazılımcı olacağım!" stringini 
 elde edin, sonucu `bircumle` değişkenine atayın ve konsolde gözlemleyin */
 var bircumle;
-
+bircumle = cumleKur("Ben ", "iyi ", "bir ", "yazılımcı ", "olacağım!");
+console.log(bircumle);
 /* kodlar buraya */
 
 //		Sayfanın en üstünde global olarak tanımlanmış `cumleler` adında bir dizi bulunmaktadır. Bu dizinin
