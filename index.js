@@ -191,9 +191,13 @@ console.log("3b: ", diziyiDuzenle2(sebzeler));
 elemanlara denk gelecek şekilde, iki diziyi birleştirip sonucu manav dizisine aktarın. (.concat metodu)
  */
 //3c çözümü
-/* kodlar buraya */
-
 var manav;
+function yeniManav(meyvelerDizisi, sebzelerDizisi) {
+  manav = [];
+  manav = meyvelerDizisi.concat(sebzelerDizisi);
+  return manav;
+}
+console.log(yeniManav(meyveler, sebzeler));
 
 /* 	GÖREV 4:
 		Yeni kurulmuş bir mesajlaşma startup firması atılan mesajları emojilerle zenginleştirmek istiyor. 
