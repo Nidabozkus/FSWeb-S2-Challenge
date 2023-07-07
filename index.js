@@ -201,7 +201,7 @@ console.log(yeniManav(meyveler, sebzeler));
 
 /* 	GÖREV 4:
 		Yeni kurulmuş bir mesajlaşma startup firması atılan mesajları emojilerle zenginleştirmek istiyor. 
-    Bunun için emojiler adında bir nesne tanımlamışlar. Kullanıcının gönderdiği mesaj stringi içinde 
+    Bunun içinKullanıcının gö emojiler adında bir nesne tanımlamışlar. nderdiği mesaj stringi içinde 
     emojiler nesnesinin anahtarı(index) bulunuyorsa, bu işareti otomatik olarak anahtara ait değerde 
     tanımlanmış emoji ile değiştirecek bir fonksiyon geliştirmek istiyorlar. ÖRNEK: Mesaj içinde ":)" 
     sembolü bulunursa mesajı alan kişi bu sembolü "🙂" olarak görecek. Burdan yola çıkarak 
@@ -216,10 +216,14 @@ console.log(yeniManav(meyveler, sebzeler));
 			4. elde edilen string döndürülecek
  */
 
-function emojileriDonustur(/* kodlar buraya */) {
-  /* kodlar buraya */
+function emojileriDonustur(mesaj = "", emojiObject) {
+  let a = mesaj.toLowerCase();
+  let b = mesaj.toUpperCase();
+  a = b;
+  const yeniMesaj = mesaj.replaceAll(mesaj, emojiObject.mesaj);
+  return yeniMesaj;
 }
-
+console.log(emojileriDonustur(":D", emojiler));
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 function sa() {
   console.log("Kodlar çalışıyor");
