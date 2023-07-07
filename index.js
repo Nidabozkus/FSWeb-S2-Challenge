@@ -130,10 +130,11 @@ console.log(bircumle);
 			5. Oluşturulan yeni dizi döndürülecek.
 	*/
 
-function cumlelereDonustur(/* kodlar buraya */) {
-  /* kodlar buraya */
+function cumlelereDonustur(cumlelerDizisi, ayrac = ",") {
+  const yeniHali = cumlelerDizisi.map((c) => c.join(ayrac));
+  return yeniHali;
 }
-
+console.log(cumlelereDonustur(cumleler, " "));
 /* GÖREV 2:
 		paragrafOlustur fonksiyonuna aşağıdakileri uygulayın.
 			1. cumleler dizisi fonksiyonun birinci parametresi olarak alınacak
