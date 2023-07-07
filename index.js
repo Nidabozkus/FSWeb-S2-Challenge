@@ -180,7 +180,12 @@ arkalarından dolaşacak. Varsayalım ki arkadaşların planları başarılı ol
 Kirpiyi dizinin son elemanına ekleyin 🦔
  */
 //3b çözümü
-/* kodlar buraya */
+function diziyiDuzenle2(sebzelerDizisi) {
+  sebzelerDizisi.unshift("🐇");
+  sebzelerDizisi.push("🦔");
+  return sebzelerDizisi;
+}
+console.log("3b: ", diziyiDuzenle2(sebzeler));
 
 /* 			3c. manav isminde bir dizi oluşturun.`meyveler` dizisi ilk elemanlara, `sebzeler` dizisi son 
 elemanlara denk gelecek şekilde, iki diziyi birleştirip sonucu manav dizisine aktarın. (.concat metodu)
